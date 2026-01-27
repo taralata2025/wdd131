@@ -28,6 +28,16 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+    border-bottom: 2px solid #ffeb3b;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 main {
