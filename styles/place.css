@@ -1,0 +1,145 @@
+:root{
+
+    --background-color: #3a0ca3;
+    --accent:#f72585;
+}
+*{
+     padding: 0;
+     margin: 0;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+header{
+     background-color: var(--background-color);
+     height: 100px;
+    
+   
+}
+body{
+    display: block;
+     font-family: "Roboto", sans-serif;
+    
+}
+main{
+     border-top: 40px solid var(--accent);
+}
+
+@media (max-width:768px){
+    .data, .weather {
+    margin: 0 auto;
+    width: 300px;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+.icon{
+    padding-left: 120px;
+
+}
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 13px;
+   
+    
+}
+    li{
+    
+        padding: 10px; 
+        list-style: none;
+        text-align: center;
+    }
+.highlight {
+	color: yellow;
+	font-weight: 700;
+	font-family: hebrew;
+}
+
+.foot-p{
+    color: white;
+    font-weight: bold;
+    padding-top: 30px;
+
+}
+footer{
+    text-align: center;
+    background-color: var(--background-color);
+    height: 100px;
+}
+
+@media (min-width: 768px){
+    main{
+        position: relative;
+    }
+    .weather{
+        position: absolute;
+         bottom: 50px;
+           right: 20px;
+           background-color: white;
+           height: 250px;
+            opacity: 0.9;
+
+
+    }
+    .data{
+         position: absolute;
+         top: 50px;
+           left: 50px; 
+           background-color: white;
+           height: auto;
+           opacity: 0.9;
+
+
+    }
+
+    .data h2 {
+        background-color: var(--accent);
+        color: black;
+        margin-top: 20px;
+        margin-right: 30px;
+        padding-left: 30px;
+        height: 40px;
+    }
+
+
+   .icon{
+    display: none;
+   }
+    
+
+ .weather-heading {
+  background-color:var(--accent); 
+  color: black;
+  font-size: 24px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+   margin-top: 20px;
+    margin-right: 30px;
+    padding-left: 30px;
+  width: 250px; 
+  border-radius: 4px;
+  width: fit-content;
+}
+
+
+.weather-heading::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/weather.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+}
