@@ -6,7 +6,7 @@ const lastup = document.createElement("p");
 const today = new Date();
 const year = today.getFullYear();
 lastup.innerText = `Last Modification ${document.lastModified}`
-copyright.innerText = `\u00A9 ${year} 🌹 Gift Agbiji 🌹 Nigeria`
+copyright.innerText = `\u00A9 ${year} 🌹 Tarilate Ginah Jones 🌹 Nigeria`
 lastup.classList.add("highlight");
 copyright.classList.add("foot-p");
 footer.appendChild(copyright);
