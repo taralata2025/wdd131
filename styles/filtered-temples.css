@@ -1,0 +1,107 @@
+
+ body{
+     font-family: "Roboto", sans-serif;
+} 
+ header{
+    background-color: rgb(70, 70, 112);
+    color: white;
+    position: relative;
+ }
+img{
+    width: 300px;
+    box-shadow: 0 2px 2px 3px rgb(0, 0, 0, 0.3);
+    
+}
+main{
+    display: grid;
+	grid-template-columns: 1fr;
+    
+    
+}
+
+h3{
+    font-size: 20px;
+}
+
+.label{
+    font-weight: bold;
+}
+section{
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #bbb;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+	
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	right: 1rem;
+    color: white;
+
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+
+
+@media (max-width:768px) {
+    
+
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: right;
+	text-decoration: none;
+	color: blue;
+	font-weight: bolder;
+	padding-right: 25px;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+header{
+	height: 50px;
+}
+h1{
+	padding-top: 15px;
+}
+
+}
+
+
+
+.open a {
+	display: block;
+}
+footer{
+    background-color: rgb(70, 70, 112);
+}
+.highlight {
+	color: yellow;
+	font-weight: 700;
+	font-family: hebrew;
+    text-align: center;
+}
+.copyr{
+    color: white;
+    text-align: center;
+}
