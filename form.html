@@ -3,84 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Form</title>
-    <meta name="description" content="Produt review form, Share your experience with our high-tech products. This review form allows customers to rate and provide feedback on their favorite gadgets.">
+    <title>Product Review Form | Build Your Rating</title>
+    <meta name="description" content="Share your experience with our high-tech products. This review form allows customers to rate and provide feedback on their favorite gadgets and features.">
     <meta name="author" content="Tarilate Ginah Jones">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
         <h1>Review Form</h1>
-
     </header>
     <main>
         <form action="review.html" method="get">
             <fieldset>
-           <div class="dif">
-    <label for="pname">Product Name <span class="req">*</span></label>
-    <select name="product" id="pname" required>
-        <option value="" disabled selected>Select a Product ...</option>
-    </select>
-</div>
+                <div class="dif">
+                    <label for="pname">Product Name <span class="req">*</span></label>
+                    <select name="product" id="pname" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+                </div>
 
-<div class="dif"> 
-    <label>Overall Rating <span class="req">*</span></label>
-    <div class="rating">
-        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> <span>&star;</span></label>
-        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> <span>&star;&star;</span></label>
-        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> <span>&star;&star;&star;</span></label>
-        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> <span>&star;&star;&star;&star;</span></label>
-        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> <span>&star;&star;&star;&star;&star;</span></label>
-    </div>
-</div>
+                <div class="dif"> 
+                    <label>Overall Rating <span class="req">*</span></label>
+                    <div class="rating">
+                        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> <span>&star;</span></label>
+                        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> <span>&star;&star;</span></label>
+                        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> <span>&star;&star;&star;</span></label>
+                        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> <span>&star;&star;&star;&star;</span></label>
+                        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> <span>&star;&star;&star;&star;&star;</span></label>
+                    </div>
+                </div>
 
-<div class="dif">
-    <label for="date">Date of Installation <span class="req">*</span></label>
-    <input type="date" name="instdate" id="date" required>
-</div>
-<div class="dif">
-    <p>Which features did you find useful? <span class="optional">(Check all that apply)</span></p>
-    
-    <div class="checkbox-group">
-        <label for="durability">
-            <input type="checkbox" id="durability" name="feature" value="durability"> Durability
-        </label>
-        
-        <label for="ease">
-            <input type="checkbox" id="ease" name="feature" value="ease"> Ease of Use
-        </label>
-        
-        <label for="performance">
-            <input type="checkbox" id="performance" name="feature" value="performance"> Performance
-        </label>
-        
-        <label for="design">
-            <input type="checkbox" id="design" name="feature" value="design"> Design
-        </label>
-    </div>
-</div>
+                <div class="dif">
+                    <label for="date">Date of Installation <span class="req">*</span></label>
+                    <input type="date" name="instdate" id="date" required>
+                </div>
 
-<div class="dif">
-    <label for="wreview">Written Review (Optional)</label>
-    <textarea name="wreview" id="wreview"></textarea>
-</div>
-<div class="dif">
-    <label for="uname">Your Name (Optional)</label>
-    <input type="text" name="uname" id="uname">
-</div>
-        <input type="submit" value="Post Review">
+                <div class="dif">
+                    <p>Which features did you find useful? <span class="optional">(Check all that apply)</span></p>
+                    <div class="checkbox-group">
+                        <label for="durability">
+                            <input type="checkbox" id="durability" name="feature" value="durability"> Durability
+                        </label>
+                        <label for="ease">
+                            <input type="checkbox" id="ease" name="feature" value="ease"> Ease of Use
+                        </label>
+                        <label for="performance">
+                            <input type="checkbox" id="performance" name="feature" value="performance"> Performance
+                        </label>
+                        <label for="design">
+                            <input type="checkbox" id="design" name="feature" value="design"> Design
+                        </label>
+                    </div>
+                </div>
 
+                <div class="dif">
+                    <label for="wreview">Written Review (Optional)</label>
+                    <textarea name="wreview" id="wreview" rows="4"></textarea>
+                </div>
+
+                <div class="dif">
+                    <label for="uname">Your Name (Optional)</label>
+                    <input type="text" name="uname" id="uname">
+                </div>
+            </fieldset> <input type="submit" value="Post Review">
         </form>
-
     </main>
     <footer>
-
-    </footer>
-    
+        </footer>
 </body>
 </html>
