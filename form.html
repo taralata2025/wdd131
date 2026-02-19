@@ -21,53 +21,37 @@
     <main>
         <form action="review.html" method="get">
             <fieldset>
-            <div class="dif"><label >Product name </label>
-                <select name="product" id="pname" required>
-                    <option value="" disabled selected>Select a Product ... &#9662;</option>
-                </select></div>
-           
-            
-   <div class="dif"> <label>Overall Rating</label>
+           <div class="dif">
+    <label for="pname">Product Name <span class="req">*</span></label>
+    <select name="product" id="pname" required>
+        <option value="" disabled selected>Select a Product ...</option>
+    </select>
+</div>
+
+<div class="dif"> 
+    <label>Overall Rating <span class="req">*</span></label>
     <div class="rating">
-      <label>
-        <input type="radio" name="rating" value="1">
-        <span>&star;</span>
-      </label>
-      <label>
-        <input type="radio" name="rating" value="2">
-        <span>&star;&star;</span>
-      </label>
-      <label>
-        <input type="radio" name="rating" value="3">
-        <span>&star;&star;&star;</span>
-      </label>
-      <label>
-        <input type="radio" name="rating" value="4">
-        <span>&star;&star;&star;&star;</span>
-      </label>
-      <label>
-        <input type="radio" name="rating" value="5">
-        <span>&star;&star;&star;&star;&star;</span>
-      </label>
+        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required> <span>&star;</span></label>
+        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" required> <span>&star;&star;</span></label>
+        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" required> <span>&star;&star;&star;</span></label>
+        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" required> <span>&star;&star;&star;&star;</span></label>
+        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" required> <span>&star;&star;&star;&star;&star;</span></label>
     </div>
 </div>
 
-            <div class="dif"><div>Date of Installation</div>
-            <input type="date" name="instdate" id="date" required></div>
+<div class="dif">
+    <label for="date">Date of Installation <span class="req">*</span></label>
+    <input type="date" name="instdate" id="date" required>
+</div>
 
-            <div  class="dif"><label>Which of the features did you find useful in the product?<br>(Check all that applies)</label>
-                
-                <label ><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
-                  <label ><input type="checkbox" id="ease" name="ease" value="yes">Ease of use</label>
-                    <label ><input type="checkbox" id="Performance" name="Performance" value="yes">Performance</label>
-                      <label ><input type="checkbox" id="design" name="design" value="yes">Design</label></div>
-
-                
-            <div class="dif"><label>Written Review <span>(Optional)</span> <textarea name="wreview" id="wreview"></textarea></label></div>
-            <div class="dif"><label >Your Name <span>(Optional)</span> <input type="text" name="uname" id="uname"></label></div>
-          
-
-        </fieldset>
+<div class="dif">
+    <label for="wreview">Written Review (Optional)</label>
+    <textarea name="wreview" id="wreview"></textarea>
+</div>
+<div class="dif">
+    <label for="uname">Your Name (Optional)</label>
+    <input type="text" name="uname" id="uname">
+</div>
         <input type="submit" value="Post Review">
 
         </form>

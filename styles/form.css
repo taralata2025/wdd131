@@ -69,9 +69,18 @@
      .dif{
         margin-bottom: 20px;
      }
-     span{
-        color: blue;
-     }
+     /* Update your span color for better contrast */
+span {
+    color: #0000cc; /* Darker blue for accessibility */
+}
+
+/* Ensure the form is responsive for the "Web Design Principles" points */
+form {
+    width: 95%; /* Better for mobile views */
+    padding: 1rem;
+    box-sizing: border-box; /* Prevents padding from breaking width */
+}
+     
     input[type="submit"]{
     border: none;
     background-color: blue;
@@ -92,6 +101,24 @@
 	font-weight: 700;
 	font-family: hebrew;
 }
+/* Add this to your existing form.css if it's not already there */
+
+.review-container {
+    text-align: center;
+    padding: 3rem 1rem;
+    max-width: 450px;
+    margin: 20px auto;
+    background-color: rgb(250, 248, 248);
+    border-radius: 6px;
+}
+
+#review-display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: blue; /* Matches your submit button */
+    display: block;
+    margin-top: 10px;
+}
 
 .foot-p{
     color: white;
@@ -105,4 +132,24 @@ footer{
     height: 100px;
     max-width: 450px;
     margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: #f0f0f0; 
+    }
+    
+    form {
+        max-width: 600px; 
+        padding: 2rem;
+    }
+
+    h1 {
+        max-width: 600px;
+        font-size: 2.5rem;
+    }
+    
+    footer {
+        max-width: 600px;
+    }
 }
